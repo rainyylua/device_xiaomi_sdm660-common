@@ -30,7 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sos=true \
     persist.vendor.audio.spv3.enable=true \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
-    persist.vendor.audio.ras.enabled=false \
     ro.af.client_heap_size_kbyte=7168 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
@@ -94,14 +93,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.maxx_audio.enable=false \
     vendor.audio.feature.ras.enable=true \
     vendor.audio.feature.record_play_concurency.enable=false \
-    vendor.audio.feature.snd_mon.enable=false \
     vendor.audio.feature.src_trkn.enable=true \
     vendor.audio.feature.ssrec.enable=false \
     vendor.audio.feature.usb_offload.enable=true \
     vendor.audio.feature.usb_offload_burst_mode.enable=false \
     vendor.audio.feature.usb_offload_sidetone_volume.enable=false \
-    vendor.audio.feature.vbat.enable=true \
-    vendor.audio.feature.wsa.enable=false
+    vendor.audio.feature.vbat.enable=true
 
 ifneq ($(filter jason,$(TARGET_DEVICE)),)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -130,7 +127,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.dual.isp.sync=0 \
     persist.vendor.camera.HAL3.enabled=1 \
-    persist.vendor.camera.eis.enable=1 \
     persist.vendor.camera.exif.make=Xiaomi \
     vendor.camera.aux.packageblacklist=com.discord \
     camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam \
@@ -167,7 +163,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     ro.vendor.display.cabl=2 \
-    vendor.display.enable_default_color_mode=1 \
     debug.sf.latch_unsignaled=0 \
     persist.sys.sf.disable_blurs=0
 
@@ -284,9 +279,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_touch_timer_ms=5000 \
     ro.surface_flinger.set_idle_timer_ms=9000 \
     ro.surface_flinger.wcg_composition_dataspace=143261696 \
-    debug.performance.tuning=1 \
-    ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.use_color_management=1
+    debug.performance.tuning=1
 
 # System restart
 PRODUCT_PROPERTY_OVERRIDES += \
