@@ -260,6 +260,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.force_ltd_sys_ind=1 \
     persist.radio.calls.on.ims=1
 
+# SOC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM660
+
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.facing=false \
