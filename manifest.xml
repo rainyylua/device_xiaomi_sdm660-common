@@ -663,12 +663,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mlipay</name>
+        <name>vendor.qti.hardware.mwqemadapter</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
-            <name>IMlipayService</name>
-            <instance>default</instance>
+            <name>IMwqemAdapter</name>
+            <instance>MwqemAdapter</instance>
         </interface>
     </hal>
     <hal format="hidl">
