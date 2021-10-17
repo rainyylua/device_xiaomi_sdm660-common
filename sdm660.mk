@@ -250,9 +250,6 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
-# GMS
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
